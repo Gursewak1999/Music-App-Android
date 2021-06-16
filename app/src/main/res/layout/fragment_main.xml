@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/editors_choice_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        android:text="Editor's Choice"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/editors_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editors_choice_label" />
+
+    <TextView
+        android:id="@+id/new_release_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/editors_recycler"
+        android:text="New Releases"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_release_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_release_label" />
+
+    <TextView
+        android:id="@+id/punjabi_albums_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/new_release_recycler"
+        android:text="Punjabi Albums"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/punjabi_albums_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/punjabi_albums_label" />
+
+    <TextView
+        android:id="@+id/hindi_albums_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/punjabi_albums_recycler"
+        android:text="Hindi Albums"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hindi_albums_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hindi_albums_label" />
+
+    <TextView
+        android:id="@+id/hindi_single_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/hindi_albums_recycler"
+        android:text="Hindi Albums"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hindi_single_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hindi_single_label" />
+
+</RelativeLayout>

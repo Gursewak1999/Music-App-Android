@@ -1,0 +1,3 @@
+include ':app'
+include ':UnicornFilePicker'
+rootProject.name = "MusicApp"
